@@ -16,6 +16,8 @@ try {
 
     const outputString = addInclude ? `{"include":${filteredJsonAsString}}` : filteredJsonAsString;
     core.setOutput("matrix", outputString);
+    
+    
 } catch (error) {
     core.setFailed(error.message);
 }
